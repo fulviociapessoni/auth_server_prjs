@@ -1,0 +1,86 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="wv1#area2#page31" name="Application" landmark="true" gr:x="485" gr:y="685">
+  <ViewComponents>
+    <List id="wv1#area2#page31#lst13" gr:x="270" gr:y="0" checkable="false" distinct="false" dynamicSort="true">
+      <Events>
+        <OnSelectEvent id="wv1#area2#page31#lst13#oslte41" name="Details" validate="true">
+          <NavigationFlow id="wv1#area2#page31#lst13#oslte41#nf100" to="wv1#area2#page32#dtl8">
+            <ParameterBinding id="wv1#area2#page31#lst13#oslte41#nf100#par255" source="data._application_$appID" target="_application_$appID" name="App ID - App ID [string]"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv1#area2#page31#lst13#oslte42" name="Delete" validate="true">
+          <NavigationFlow id="wv1#area2#page31#lst13#oslte42#nf101" to="wv1#area2#act33">
+            <ParameterBinding id="wv1#area2#page31#lst13#oslte42#nf101#par256" source="data._application_$appID" target="wv1#area2#act33._application_delete$appID" name="App ID - App ID"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv1#area2#page31#lst13#oslte43" name="Edit" validate="true">
+          <NavigationFlow id="wv1#area2#page31#lst13#oslte43#nf102" to="wv1#area2#page31#frm18">
+            <ParameterBinding id="wv1#area2#page31#lst13#oslte43#nf102#par232" source="data._application_$accessTokenValidity" target="{wv1#area2#page31#frm18#fld68}value" name="Access Token Validity - Access Token Validity"/>
+            <ParameterBinding id="wv1#area2#page31#lst13#oslte43#nf102#par233" source="data._application_$appID" target="{wv1#area2#page31#frm18#fld63}value" name="App ID - AppId"/>
+            <ParameterBinding id="wv1#area2#page31#lst13#oslte43#nf102#par234" source="data._application_$authorities" target="{wv1#area2#page31#frm18#fld67}value" name="Authorities - Authorities"/>
+            <ParameterBinding id="wv1#area2#page31#lst13#oslte43#nf102#par235" source="data._application_$description" target="{wv1#area2#page31#frm18#fld66}value" name="Description - Description"/>
+            <ParameterBinding id="wv1#area2#page31#lst13#oslte43#nf102#par236" source="data._application_$name" target="{wv1#area2#page31#frm18#fld64}value" name="Name - Name"/>
+            <ParameterBinding id="wv1#area2#page31#lst13#oslte43#nf102#par237" source="data._application_$refreshTokenValidity" target="{wv1#area2#page31#frm18#fld69}value" name="Refresh Token Validity - Refresh Token Validity"/>
+            <ParameterBinding id="wv1#area2#page31#lst13#oslte43#nf102#par344" source="data._application_$scopes" target="{wv1#area2#page31#frm18#sfld15}presel.0" name="Scopes - Scopes - Preselection"/>
+            <ParameterBinding id="wv1#area2#page31#lst13#oslte43#nf102#par345" source="data._application_$authorizedGrantTypes" target="{wv1#area2#page31#frm18#sfld16}presel.0" name="Authorized Grant Types - Authorized Grant Types - Preselection"/>
+            <ParameterBinding id="wv1#area2#page31#lst13#oslte43#nf102#par346" source="data._application_$resourceIDs" target="{wv1#area2#page31#frm18#sfld17}presel.0" name="Authorized Resources - Authorized Resources - Preselection"/>
+            <ParameterBinding id="wv1#area2#page31#lst13#oslte43#nf102#par347" source="data._application_$type" target="{wv1#area2#page31#frm18#sfld18}presel.0" name="Type - Type - Preselection"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <DataBinding authServiceRes="_application_"/>
+      <DisplayAttributes authServiceOutput="_application_$appID"/>
+      <DisplayAttributes authServiceOutput="_application_$name"/>
+      <DisplayAttributes authServiceOutput="_application_$type"/>
+      <DisplayAttributes authServiceOutput="_application_$description"/>
+      <DisplayAttributes authServiceOutput="_application_$authorities"/>
+      <DisplayAttributes authServiceOutput="_application_$accessTokenValidity"/>
+      <DisplayAttributes authServiceOutput="_application_$refreshTokenValidity"/>
+      <SortAttributes authServiceOutput="_application_$appID" order="ascending"/>
+    </List>
+    <Form id="wv1#area2#page31#frm18" name="Form" gr:x="0" gr:y="15">
+      <Events>
+        <OnSelectEvent id="wv1#area2#page31#frm18#oslte44" name="Create" validate="true">
+          <NavigationFlow id="wv1#area2#page31#frm18#oslte44#nf103" to="wv1#area2#act32">
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte44#nf103#par239" source="{wv1#area2#page31#frm18#fld68}value" target="wv1#area2#act32._application_create$accessTokenValidity" name="Access Token Validity - Access Token Validity"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte44#nf103#par240" source="{wv1#area2#page31#frm18#fld63}value" target="wv1#area2#act32._application_create$appID" name="AppId - App ID"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte44#nf103#par241" source="{wv1#area2#page31#frm18#fld67}value" target="wv1#area2#act32._application_create$authorities" name="Authorities - Authorities"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte44#nf103#par242" source="{wv1#area2#page31#frm18#fld66}value" target="wv1#area2#act32._application_create$description" name="Description - Description"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte44#nf103#par243" source="{wv1#area2#page31#frm18#fld64}value" target="wv1#area2#act32._application_create$name" name="Name - Name"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte44#nf103#par244" source="{wv1#area2#page31#frm18#fld69}value" target="wv1#area2#act32._application_create$refreshTokenValidity" name="Refresh Token Validity - Refresh Token Validity"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte44#nf103#par348" source="{wv1#area2#page31#frm18#sfld16}value.0" target="wv1#area2#act32._application_create$authorizedGrantTypes" name="Authorized Grant Types - Authorized Grant Types"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte44#nf103#par349" source="{wv1#area2#page31#frm18#sfld17}value.0" target="wv1#area2#act32._application_create$resourceIDs" name="Authorized Resources - Authorized Resources"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte44#nf103#par350" source="{wv1#area2#page31#frm18#sfld15}value.0" target="wv1#area2#act32._application_create$scopes" name="Scopes - Scopes"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte44#nf103#par351" source="{wv1#area2#page31#frm18#sfld18}value.0" target="wv1#area2#act32._application_create$type" name="Type - Type"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv1#area2#page31#frm18#oslte45" name="Update" validate="true">
+          <NavigationFlow id="wv1#area2#page31#frm18#oslte45#nf104" to="wv1#area2#act34">
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte45#nf104#par246" source="{wv1#area2#page31#frm18#fld68}value" target="wv1#area2#act34._application_update$accessTokenValidity" name="Access Token Validity - Access Token Validity"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte45#nf104#par247" source="{wv1#area2#page31#frm18#fld63}value" target="wv1#area2#act34._application_update$appID" name="AppId - App ID"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte45#nf104#par248" source="{wv1#area2#page31#frm18#fld67}value" target="wv1#area2#act34._application_update$authorities" name="Authorities - Authorities"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte45#nf104#par249" source="{wv1#area2#page31#frm18#fld66}value" target="wv1#area2#act34._application_update$description" name="Description - Description"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte45#nf104#par250" source="{wv1#area2#page31#frm18#fld64}value" target="wv1#area2#act34._application_update$name" name="Name - Name"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte45#nf104#par251" source="{wv1#area2#page31#frm18#fld69}value" target="wv1#area2#act34._application_update$refreshTokenValidity" name="Refresh Token Validity - Refresh Token Validity"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte45#nf104#par352" source="{wv1#area2#page31#frm18#sfld16}value.0" target="wv1#area2#act34._application_update$authorizedGrantTypes" name="Authorized Grant Types - Authorized Grant Types"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte45#nf104#par353" source="{wv1#area2#page31#frm18#sfld17}value.0" target="wv1#area2#act34._application_update$resourceIDs" name="Authorized Resources - Authorized Resources"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte45#nf104#par354" source="{wv1#area2#page31#frm18#sfld15}value.0" target="wv1#area2#act34._application_update$scopes" name="Scopes - Scopes"/>
+            <ParameterBinding id="wv1#area2#page31#frm18#oslte45#nf104#par355" source="{wv1#area2#page31#frm18#sfld18}value.0" target="wv1#area2#act34._application_update$type" name="Type - Type"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <Field id="wv1#area2#page31#frm18#fld63" type="string" modifiable="true" name="AppId"/>
+      <Field id="wv1#area2#page31#frm18#fld64" type="string" modifiable="true" name="Name"/>
+      <Field id="wv1#area2#page31#frm18#fld66" type="string" modifiable="true" name="Description"/>
+      <Field id="wv1#area2#page31#frm18#fld67" type="string" modifiable="true" name="Authorities"/>
+      <Field id="wv1#area2#page31#frm18#fld68" type="string" modifiable="true" name="Access Token Validity"/>
+      <Field id="wv1#area2#page31#frm18#fld69" type="string" modifiable="true" name="Refresh Token Validity"/>
+      <SelectionField id="wv1#area2#page31#frm18#sfld15" optionsDistinct="false" emptyOption="true" name="Scopes" multiselection="true" optionsValues="anonymous_user,password_change,identity_registration"/>
+      <SelectionField id="wv1#area2#page31#frm18#sfld16" optionsDistinct="false" emptyOption="true" name="Authorized Grant Types" multiselection="true" optionsValues="client_credentials,password,refresh_token,urn:ietf:params:oauth:grant-type:jwt-bearer"/>
+      <SelectionField id="wv1#area2#page31#frm18#sfld17" optionsDistinct="false" emptyOption="true" name="Authorized Resources" multiselection="true" optionsValues="oauth2-resource,wr-auth,MyWeb,MyDS"/>
+      <SelectionField id="wv1#area2#page31#frm18#sfld18" optionsDistinct="false" emptyOption="true" name="Type" optionsValues="WEB,MOBILE,SERVICE"/>
+    </Form>
+  </ViewComponents>
+  <layout:Grid containerType="grid">
+    <layout:Row/>
+  </layout:Grid>
+</Page>

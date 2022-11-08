@@ -1,0 +1,18 @@
+<wr-page>
+  <wr-content for="menu">
+    <wd-navigation-list itemsList="landmarks/area2/{Landmark}*" itemsListOrder="page25 page31 page33 page36" style="background-color: white;">
+      <wr-content for="nav-item[page33]">
+        <wd-navigation-list-item style="display: inline-block;"></wd-navigation-list-item>
+      </wr-content>
+      <wr-content for="nav-item[page31]">
+        <wd-navigation-list-item style="display: inline-block;"></wd-navigation-list-item>
+      </wr-content>
+      <wr-content for="nav-item[page25]">
+        <wd-navigation-list-item style="display: inline-block;"></wd-navigation-list-item>
+      </wr-content>
+      <wr-content for="nav-item[page36]">
+        <wd-navigation-list-item style="display: inline-block;"></wd-navigation-list-item>
+      </wr-content>
+    </wd-navigation-list>
+  </wr-content>
+</wr-page>

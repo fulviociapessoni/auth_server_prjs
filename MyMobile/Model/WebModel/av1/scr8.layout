@@ -1,0 +1,5 @@
+<wr-page>
+  <wr-content for="right-top-bar">
+    <imd-button context="main/gctu1/oslte8" iconName="log-out-outline" [label]="valueOf('/main/dtl1/data/_be_userName') | wrLocalize"></imd-button>
+  </wr-content>
+</wr-page>

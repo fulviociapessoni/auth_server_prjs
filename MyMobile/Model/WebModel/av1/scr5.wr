@@ -1,0 +1,43 @@
+<Screen xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="av1#scr5" name="Change password" gr:x="460" gr:y="60" protected="true" layout:pageTemplate="MobileDefault/Login">
+  <ViewComponents>
+    <Form id="av1#scr5#frm3" name="Change password" gr:x="20" gr:y="95">
+      <Events>
+        <OnSelectEvent id="av1#scr5#frm3#oslte4" name="Change password" validate="true">
+          <NavigationFlow id="av1#scr5#frm3#oslte4#nf12" to="av1#act4">
+            <ParameterBinding id="av1#scr5#frm3#oslte4#nf12#par24" source="{av1#scr5#frm3#fld8}value" target="av1#act4.tlads0#ad3#ipd3#pdp11" name="new password - New password"/>
+            <ParameterBinding id="av1#scr5#frm3#oslte4#nf12#par25" source="{av1#scr5#frm3#fld7}value" target="av1#act4.tlads0#ad3#ipd3#pdp10" name="current password - Old password"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <Field id="av1#scr5#frm3#fld7" name="current password" type="password" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="av1#scr5#frm3#fld7#mnd6" name="mandatory"/>
+          <PasswordStrengthValidationRule id="av1#scr5#frm3#fld7#psvr4" name="password strength" securityLevel="medium"/>
+        </VRules>
+      </Field>
+      <Field id="av1#scr5#frm3#fld8" name="new password" type="password" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="av1#scr5#frm3#fld8#mnd7" name="mandatory"/>
+          <PasswordStrengthValidationRule id="av1#scr5#frm3#fld8#psvr5" name="password strength" securityLevel="medium"/>
+          <CompareValidationRule id="av1#scr5#frm3#fld8#cmp3" name="not equal current password" predicate="neq" valueField="av1#scr5#frm3#fld7"/>
+        </VRules>
+      </Field>
+      <Field id="av1#scr5#frm3#fld9" name="confirm new password" type="password" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="av1#scr5#frm3#fld9#mnd8" name="mandatory"/>
+          <PasswordStrengthValidationRule id="av1#scr5#frm3#fld9#psvr6" name="password strength" securityLevel="medium"/>
+          <CompareValidationRule id="av1#scr5#frm3#fld9#cmp4" name="equal to new password" predicate="eq" valueField="av1#scr5#frm3#fld8"/>
+        </VRules>
+      </Field>
+    </Form>
+    <Message id="av1#scr5#msg4" name="Error" gr:x="95" gr:y="0">
+      <Events/>
+    </Message>
+    <Message id="av1#scr5#msg5" name="Info" gr:x="0" gr:y="0">
+      <Events/>
+    </Message>
+  </ViewComponents>
+  <layout:Grid containerType="grid">
+    <layout:Row/>
+  </layout:Grid>
+</Screen>

@@ -1,0 +1,12 @@
+<wr-page>
+  <wr-content for="content">
+    <imd-image staticImage="assets/MobileDefault/images/webratio-logo.png" class="logo"></imd-image>
+    <imd-input context="model:main/frm4/fld10" labelPosition="floating" color="light"></imd-input>
+    <imd-password context="model:main/frm4/fld11" labelPosition="floating" color="light"></imd-password>
+    <imd-checkboxes context="model:main/frm4/fld12" [showLabel]="false" color="light"></imd-checkboxes>
+    <imd-button context="model:main/frm4/oslte5" color="light" expand="block" class="login"></imd-button>
+    <br>
+    <imd-button context="main/frm4/oslte7" color="light" expand="block" class="login"></imd-button>
+  </wr-content>
+</wr-page>
+<imd-toast [message]="valueOf('main/msg6/messages')" position="bottom" color="danger"></imd-toast>

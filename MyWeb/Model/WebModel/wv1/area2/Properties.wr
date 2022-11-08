@@ -1,0 +1,121 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv1#area2" name="Admin Area" gr:x="305" gr:y="560" landmark="true" default="wv1#area2#page29" landmarks="wv1#area2#page25 wv1#area2#page31 wv1#area2#page33 wv1#area2#page36">
+  <Action id="wv1#area2#act28" gr:x="1080" gr:y="185" authServiceRes="_identity_delete">
+    <Events>
+      <SuccessEvent id="wv1#area2#act28#scce36" gr:pinned="true" gr:side="7" gr:pos="0">
+        <NavigationFlow id="wv1#area2#act28#scce36#nf98" to="wv1#area2#page25#lst12" automaticCoupling="true"/>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#area2#act28#erre62"/>
+    </Events>
+  </Action>
+  <Action id="wv1#area2#act29" gr:x="520" gr:y="370" authServiceRes="_identity_create">
+    <Events>
+      <SuccessEvent id="wv1#area2#act29#scce32">
+        <NavigationFlow id="wv1#area2#act29#scce32#nf84" to="wv1#area2#page26#dtl7">
+          <ParameterBinding id="wv1#area2#act29#scce32#nf84#par148" source="_identity_create$userID" target="_identity_$userID" name="User ID - User ID [string]"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#area2#act29#erre58"/>
+    </Events>
+  </Action>
+  <Action id="wv1#area2#act30" gr:x="345" gr:y="485" authServiceRes="_identity_update">
+    <Events>
+      <SuccessEvent id="wv1#area2#act30#scce35">
+        <NavigationFlow id="wv1#area2#act30#scce35#nf99" to="wv1#area2#page26#dtl7">
+          <ParameterBinding id="wv1#area2#act30#scce35#nf99#par196" source="_identity_update$userID" target="_identity_$userID" name="User ID - User ID [string]"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#area2#act30#erre61"/>
+    </Events>
+  </Action>
+  <Action id="wv1#area2#act32" authServiceRes="_application_create" gr:x="520" gr:y="940">
+    <Events>
+      <SuccessEvent id="wv1#area2#act32#scce37">
+        <NavigationFlow id="wv1#area2#act32#scce37#nf105" to="wv1#area2#page32#dtl8">
+          <ParameterBinding id="wv1#area2#act32#scce37#nf105#par254" source="_application_create$appID" target="_application_$appID" name="App ID - App ID [string]"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#area2#act32#erre69"/>
+    </Events>
+  </Action>
+  <Action id="wv1#area2#act33" authServiceRes="_application_delete" gr:x="1080" gr:y="750">
+    <Events>
+      <SuccessEvent id="wv1#area2#act33#scce38" gr:pinned="true" gr:side="7" gr:pos="0">
+        <NavigationFlow id="wv1#area2#act33#scce38#nf106" to="wv1#area2#page31#lst13" automaticCoupling="true"/>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#area2#act33#erre71"/>
+    </Events>
+  </Action>
+  <Action id="wv1#area2#act34" authServiceRes="_application_update" gr:x="345" gr:y="1050">
+    <Events>
+      <SuccessEvent id="wv1#area2#act34#scce39">
+        <NavigationFlow id="wv1#area2#act34#scce39#nf107" to="wv1#area2#page32#dtl8">
+          <ParameterBinding id="wv1#area2#act34#scce39#nf107#par253" source="_application_update$appID" target="_application_$appID" name="App ID - App ID [string]"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#area2#act34#erre70"/>
+    </Events>
+  </Action>
+  <Action id="wv1#area2#act35" gr:x="490" gr:y="1540" authServiceRes="_permission_create">
+    <Events>
+      <SuccessEvent id="wv1#area2#act35#scce40">
+        <NavigationFlow id="wv1#area2#act35#scce40#nf111" to="wv1#area2#page33#lst14">
+          <ParameterBinding id="wv1#area2#act35#scce40#nf111#par265" source="_permission_create$applicationId" target="_application__permission_$appID" name="App ID - App ID [string]"/>
+          <ParameterBinding id="wv1#area2#act35#scce40#nf111#par266" source="_permission_create$userId" target="_application__permission_$userID" name="User ID - User ID [string]"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#area2#act35#erre73"/>
+    </Events>
+  </Action>
+  <Action id="wv1#area2#act36" gr:x="1105" gr:y="1265" authServiceRes="_permission_delete">
+    <Events>
+      <SuccessEvent id="wv1#area2#act36#scce41" gr:pinned="true" gr:side="7" gr:pos="0">
+        <NavigationFlow id="wv1#area2#act36#scce41#nf112" to="wv1#area2#page33#lst14">
+          <ParameterBinding id="wv1#area2#act36#scce41#nf112#par269" sourceParameterBinding="wv1#area2#page33#lst14#oslte49#nf113#par267" target="_application__permission_$appID" name="App ID - PASSING - App ID [string]"/>
+          <ParameterBinding id="wv1#area2#act36#scce41#nf112#par270" sourceParameterBinding="wv1#area2#page33#lst14#oslte49#nf113#par268" target="_application__permission_$userID" name="User ID - PASSING - User ID [string]"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#area2#act36#erre76"/>
+    </Events>
+  </Action>
+  <Action id="wv1#area2#act37" gr:x="830" gr:y="1535" authServiceRes="_permission_update">
+    <Events>
+      <SuccessEvent id="wv1#area2#act37#scce42">
+        <NavigationFlow id="wv1#area2#act37#scce42#nf116" to="wv1#area2#page33#lst14">
+          <ParameterBinding id="wv1#area2#act37#scce42#nf116#par286" source="_permission_update$applicationId" target="_application__permission_$appID" name="App ID - App ID [string]"/>
+          <ParameterBinding id="wv1#area2#act37#scce42#nf116#par287" source="_permission_update$userId" target="_application__permission_$userID" name="User ID - User ID [string]"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#area2#act37#erre78"/>
+    </Events>
+  </Action>
+  <Action id="wv1#area2#act38" gr:x="515" gr:y="1975" authServiceRes="_claim_create">
+    <Events>
+      <SuccessEvent id="wv1#area2#act38#scce44">
+        <NavigationFlow id="wv1#area2#act38#scce44#nf122" to="wv1#area2#page36#lst15">
+          <ParameterBinding id="wv1#area2#act38#scce44#nf122#par303" source="_claim_create$userId" target="_claim_$userId" name="User ID - User ID [string]"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#area2#act38#erre84"/>
+    </Events>
+  </Action>
+  <Action id="wv1#area2#act39" gr:x="825" gr:y="1970" authServiceRes="_claim_update">
+    <Events>
+      <SuccessEvent id="wv1#area2#act39#scce45">
+        <NavigationFlow id="wv1#area2#act39#scce45#nf124" to="wv1#area2#page36#lst15">
+          <ParameterBinding id="wv1#area2#act39#scce45#nf124#par307" source="_claim_update$userId" target="_claim_$userId" name="User ID - User ID [string]"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#area2#act39#erre85"/>
+    </Events>
+  </Action>
+  <Action id="wv1#area2#act40" gr:x="1120" gr:y="1715" authServiceRes="_claim_delete">
+    <Events>
+      <SuccessEvent id="wv1#area2#act40#scce43" gr:pinned="true" gr:side="7" gr:pos="0">
+        <NavigationFlow id="wv1#area2#act40#scce43#nf120" to="wv1#area2#page36#lst15">
+          <ParameterBinding id="wv1#area2#act40#scce43#nf120#par299" sourceParameterBinding="wv1#area2#page36#lst15#oslte54#nf119#par298" target="_claim_$userId" name="User ID - PASSING - User ID [string]"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#area2#act40#erre81"/>
+    </Events>
+  </Action>
+</Area>

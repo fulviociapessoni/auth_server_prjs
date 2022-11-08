@@ -1,0 +1,32 @@
+<Screen xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="av1#scr6" name="Sign in" gr:x="50" gr:y="60" layout:pageTemplate="MobileDefault/Login" inheritedAbstractScreensManual="true">
+  <ViewComponents>
+    <Form id="av1#scr6#frm4" name="Sign in" gr:x="0" gr:y="85">
+      <Events>
+        <OnSelectEvent id="av1#scr6#frm4#oslte5" name="Sign in" validate="true">
+          <NavigationFlow id="av1#scr6#frm4#oslte5#nf15" to="av1#act5">
+            <ParameterBinding id="av1#scr6#frm4#oslte5#nf15#par34" source="{av1#scr6#frm4#fld10}value" target="av1#act5.tlads0#ad4#ipd4#pdp13" name="Username - Username"/>
+            <ParameterBinding id="av1#scr6#frm4#oslte5#nf15#par35" source="{av1#scr6#frm4#fld11}value" target="av1#act5.tlads0#ad4#ipd4#pdp14" name="Password - Password"/>
+            <ParameterBinding id="av1#scr6#frm4#oslte5#nf15#par36" source="{av1#scr6#frm4#fld12}value" target="av1#act5.tlads0#ad4#ipd4#pdp15" name="Remember Me - Remember Me"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="av1#scr6#frm4#oslte7" name="Login As Admin" validate="true">
+          <NavigationFlow id="av1#scr6#frm4#oslte7#nf19" to="av1#act5">
+            <ParameterBinding id="av1#scr6#frm4#oslte7#nf19#par39" sourceValue="W3bR@t10p@$$w0rd" target="av1#act5.tlads0#ad4#ipd4#pdp14" name="&quot;W3bR@t10p@$$w0rd&quot; - Password"/>
+            <ParameterBinding id="av1#scr6#frm4#oslte7#nf19#par40" sourceValue="admin" target="av1#act5.tlads0#ad4#ipd4#pdp13" name="&quot;admin&quot; - Username"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <Field id="av1#scr6#frm4#fld10" name="Username" type="string" modifiable="true" value="MyMobileUser"/>
+      <Field id="av1#scr6#frm4#fld11" name="Password" type="string" modifiable="true" value="MyMobileUser1!"/>
+      <Field id="av1#scr6#frm4#fld12" name="Remember Me" type="boolean" modifiable="true">
+        <VRules/>
+      </Field>
+    </Form>
+    <Message id="av1#scr6#msg6" name="Sign in error" gr:x="0" gr:y="0">
+      <Events/>
+    </Message>
+  </ViewComponents>
+  <layout:Grid containerType="grid">
+    <layout:Row/>
+  </layout:Grid>
+</Screen>

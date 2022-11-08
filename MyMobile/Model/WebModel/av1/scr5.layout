@@ -1,0 +1,10 @@
+<wr-page>
+  <wr-content for="content">
+    <imd-image staticImage="assets/MobileDefault/images/webratio-logo.png" class="logo"></imd-image>
+    <imd-password context="model:main/frm3/fld7" labelPosition="floating" color="light"></imd-password>
+    <imd-password context="model:main/frm3/fld8" labelPosition="floating" color="light"></imd-password>
+    <imd-password context="model:main/frm3/fld9" color="light" labelPosition="floating"></imd-password>
+    <imd-button context="model:main/frm3/oslte4" expand="block" color="light" class="login"></imd-button>
+  </wr-content>
+</wr-page>
+<imd-toast [message]="valueOf('main/msg4/messages')" position="bottom" color="danger"></imd-toast>

@@ -1,0 +1,22 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ad3" name="Change password" defaultSuccessPortDefinition="tlads0#ad3#spd3" defaultErrorPortDefinition="tlads0#ad3#epd5">
+  <Operations>
+    <ChangePassword id="tlads0#ad3#chpwd2" name="Change password" gr:x="330" gr:y="20">
+      <SuccessFlow id="tlads0#ad3#chpwd2#sf6" to="tlads0#ad3#spd3" automaticCoupling="true"/>
+      <ErrorFlow id="tlads0#ad3#chpwd2#ef6" to="tlads0#ad3#epd5">
+        <ParameterBinding id="tlads0#ad3#chpwd2#ef6#par22" source="errorCode" target="tlads0#ad3#epd5#pdp12" name="Error Code - Error Message"/>
+      </ErrorFlow>
+    </ChangePassword>
+  </Operations>
+  <InputPortDefinition id="tlads0#ad3#ipd3" gr:y="30">
+    <PortDefinitionParameter id="tlads0#ad3#ipd3#pdp10" name="Old Password"/>
+    <PortDefinitionParameter id="tlads0#ad3#ipd3#pdp11" name="New Password"/>
+    <SuccessFlow id="tlads0#ad3#ipd3#sf5" to="tlads0#ad3#chpwd2">
+      <ParameterBinding id="tlads0#ad3#ipd3#sf5#par20" source="tlads0#ad3#ipd3#pdp10" target="oldPassword" name="Old password - Old password"/>
+      <ParameterBinding id="tlads0#ad3#ipd3#sf5#par21" source="tlads0#ad3#ipd3#pdp11" target="newPassword" name="New password - New password"/>
+    </SuccessFlow>
+  </InputPortDefinition>
+  <SuccessPortDefinition id="tlads0#ad3#spd3" name="Success" gr:y="30"/>
+  <ErrorPortDefinition id="tlads0#ad3#epd5" name="Error" gr:y="260">
+    <PortDefinitionParameter id="tlads0#ad3#epd5#pdp12" name="Error Message"/>
+  </ErrorPortDefinition>
+</ActionDefinition>

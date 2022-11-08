@@ -1,0 +1,78 @@
+<Screen xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="510" gr:y="1650" id="av1#scs1#page36" name="Claim" landmark="true">
+  <ViewComponents>
+    <Form gr:x="0" gr:y="15" id="av1#scs1#page36#frm21" name="Search">
+      <SelectionField id="av1#scs1#page36#frm21#sfld10" name="Identity" optionsDistinct="false" emptyOption="true" validationOrder="av1#scs1#page36#frm21#sfld10#mnd36">
+        <OptionsDataBinding authServiceRes="_identity_"/>
+        <OptionsAttributes authServiceOutput="_identity_$userID"/>
+        <OptionsSortAttributes authServiceOutput="_identity_$userID" order="ascending"/>
+        <VRules>
+          <MandatoryValidationRule id="av1#scs1#page36#frm21#sfld10#mnd36" name="Mandatory32"/>
+        </VRules>
+      </SelectionField>
+      <Events>
+        <OnSelectEvent id="av1#scs1#page36#frm21#oslte52" name="Search" validate="true">
+          <NavigationFlow id="av1#scs1#page36#frm21#oslte52#nf117" to="av1#scs1#page36#lst15">
+            <ParameterBinding id="av1#scs1#page36#frm21#oslte52#nf117#par293" source="{av1#scs1#page36#frm21#sfld10}value._identity_$userID" target="_claim_$userId" name="Identity [User ID] - User ID [string]"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </Form>
+    <List gr:x="280" gr:y="0" id="av1#scs1#page36#lst15" checkable="false" distinct="false" dynamicSort="true">
+      <DataBinding authServiceRes="_claim_"/>
+      <DisplayAttributes authServiceOutput="_claim_$oid"/>
+      <DisplayAttributes authServiceOutput="_claim_$key"/>
+      <DisplayAttributes authServiceOutput="_claim_$value"/>
+      <DisplayAttributes authServiceOutput="_claim_$userId"/>
+      <SortAttributes authServiceOutput="_claim_$oid" order="ascending"/>
+      <Events>
+        <OnSelectEvent id="av1#scs1#page36#lst15#oslte53" name="Edit" validate="true">
+          <NavigationFlow id="av1#scs1#page36#lst15#oslte53#nf118" to="av1#scs1#page36#frm22">
+            <ParameterBinding id="av1#scs1#page36#lst15#oslte53#nf118#par294" source="data._claim_$key" target="{av1#scs1#page36#frm22#fld81}value" name="Key - Key"/>
+            <ParameterBinding id="av1#scs1#page36#lst15#oslte53#nf118#par295" source="data._claim_$oid" target="{av1#scs1#page36#frm22#fld78}value" name="oid - oid"/>
+            <ParameterBinding id="av1#scs1#page36#lst15#oslte53#nf118#par296" source="data._claim_$value" target="{av1#scs1#page36#frm22#fld80}value" name="Value - Value"/>
+            <ParameterBinding id="av1#scs1#page36#lst15#oslte53#nf118#par310" source="data._claim_$userId" target="{av1#scs1#page36#frm22#sfld11}presel._identity_$userID" name="User ID - Identity [User ID] - Preselection"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="av1#scs1#page36#lst15#oslte54" name="Delete" validate="true">
+          <NavigationFlow id="av1#scs1#page36#lst15#oslte54#nf119" to="av1#scs1#act40">
+            <ParameterBinding id="av1#scs1#page36#lst15#oslte54#nf119#par297" source="data._claim_$oid" target="av1#scs1#act40._claim_delete$claimId" name="oid - Claim ID"/>
+            <ParameterBinding id="av1#scs1#page36#lst15#oslte54#nf119#par298" source="data._claim_$userId" passing="true" name="User ID - PASSING"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </List>
+    <Form gr:x="5" gr:y="125" id="av1#scs1#page36#frm22" name="Form">
+      <SelectionField id="av1#scs1#page36#frm22#sfld11" name="Identity" optionsDistinct="false" emptyOption="true" validationOrder="av1#scs1#page36#frm22#sfld11#mnd37">
+        <OptionsDataBinding authServiceRes="_identity_"/>
+        <OptionsAttributes authServiceOutput="_identity_$userID"/>
+        <OptionsSortAttributes authServiceOutput="_identity_$userID" order="ascending"/>
+        <VRules>
+          <MandatoryValidationRule id="av1#scs1#page36#frm22#sfld11#mnd37" name="Mandatory32"/>
+        </VRules>
+      </SelectionField>
+      <Field id="av1#scs1#page36#frm22#fld78" name="oid" type="string" modifiable="false"/>
+      <Field id="av1#scs1#page36#frm22#fld80" type="string" modifiable="true" name="Value"/>
+      <Field id="av1#scs1#page36#frm22#fld81" type="string" modifiable="true" name="Key"/>
+      <Events>
+        <OnSelectEvent id="av1#scs1#page36#frm22#oslte55" name="Create" validate="true">
+          <NavigationFlow id="av1#scs1#page36#frm22#oslte55#nf121" to="av1#scs1#act38">
+            <ParameterBinding id="av1#scs1#page36#frm22#oslte55#nf121#par300" source="{av1#scs1#page36#frm22#fld81}value" target="av1#scs1#act38._claim_create$key" name="Key - Key"/>
+            <ParameterBinding id="av1#scs1#page36#frm22#oslte55#nf121#par302" source="{av1#scs1#page36#frm22#fld80}value" target="av1#scs1#act38._claim_create$value" name="Value - Value"/>
+            <ParameterBinding id="av1#scs1#page36#frm22#oslte55#nf121#par309" source="{av1#scs1#page36#frm22#sfld11}value._identity_$userID" target="av1#scs1#act38._claim_create$userId" name="Identity [User ID] - User ID"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="av1#scs1#page36#frm22#oslte56" name="Update" validate="true">
+          <NavigationFlow id="av1#scs1#page36#frm22#oslte56#nf123" to="av1#scs1#act39">
+            <ParameterBinding id="av1#scs1#page36#frm22#oslte56#nf123#par304" source="{av1#scs1#page36#frm22#fld81}value" target="av1#scs1#act39._claim_update$key" name="Key - Key"/>
+            <ParameterBinding id="av1#scs1#page36#frm22#oslte56#nf123#par306" source="{av1#scs1#page36#frm22#fld80}value" target="av1#scs1#act39._claim_update$value" name="Value - Value"/>
+            <ParameterBinding id="av1#scs1#page36#frm22#oslte56#nf123#par308" source="{av1#scs1#page36#frm22#sfld11}value._identity_$userID" target="av1#scs1#act39._claim_update$userId" name="Identity [User ID] - User ID"/>
+            <ParameterBinding id="av1#scs1#page36#frm22#oslte56#nf123#par311" source="{av1#scs1#page36#frm22#fld78}value" target="av1#scs1#act39._claim_update$claimId" name="oid - Claim ID"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </Form>
+  </ViewComponents>
+  <layout:Grid containerType="grid">
+    <layout:Row/>
+  </layout:Grid>
+</Screen>

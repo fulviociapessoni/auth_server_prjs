@@ -1,0 +1,63 @@
+<wr-page>
+  <wr-content for="content">
+    <imd-card title="main/dtl7">
+      <wr-content for="title[dtl7]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="content">
+        <imd-container elements="main/dtl7/data/{Attribute}*">
+          <wr-content for="element[_identity_$userID]">
+            <span>
+              {{ valueOf(&#039;.&#039;) }}
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$firstName]">
+            <span>
+              {{ valueOf(&#039;.&#039;) }}
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$lastName]">
+            <span>
+              {{ valueOf(&#039;.&#039;) }}
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$email]">
+            <span>
+              {{ valueOf(&#039;.&#039;) }}
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$passwordExpirationDate]">
+            <span>
+              {{ valueOf(&#039;.&#039;) | date:&#039;wr-timestamp&#039; }}
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$authAdmin]">
+            <span>
+              {{ valueOf(&#039;.&#039;) }}
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$disabled]">
+            <span>
+              {{ valueOf(&#039;.&#039;) }}
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$expired]">
+            <span>
+              {{ valueOf(&#039;.&#039;) }}
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$locked]">
+            <span>
+              {{ valueOf(&#039;.&#039;) }}
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$attemptsNumber]">
+            <span>
+              {{ valueOf(&#039;.&#039;) }}
+            </span>
+          </wr-content>
+        </imd-container>
+      </wr-content>
+    </imd-card>
+  </wr-content>
+</wr-page>

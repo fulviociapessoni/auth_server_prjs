@@ -1,0 +1,59 @@
+<wr-page>
+  <wr-content for="bottom-bar">
+    <div>
+      <imd-select style="display: inline-block;" context="main/frm21/sfld10"></imd-select>
+      <imd-button context="main/frm21/oslte52"></imd-button>
+      <imd-button context="main/frm21/clear"></imd-button>
+    </div>
+  </wr-content>
+  <wr-content for="content">
+    <imd-data-table cols="main/lst15/data/{Attribute}*" [rows]="valueOf('main/lst15/data')" events="main/lst15/data/{Event}*">
+      <wr-content for="header[_claim_$oid]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+        <imd-button appearance="clear" event="sortBy" iconPosition="icon-only" icon="chevron-down" size="small"></imd-button>
+      </wr-content>
+      <wr-content for="header[_claim_$key]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="header[_claim_$value]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="header[_claim_$userId]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_claim_$oid]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="data[_claim_$key]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="data[_claim_$value]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="data[_claim_$userId]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="paginator">
+        <imd-paginator></imd-paginator>
+      </wr-content>
+      <wr-content for="event[oslte53]">
+        <imd-button></imd-button>
+      </wr-content>
+      <wr-content for="event[oslte54]">
+        <imd-button></imd-button>
+      </wr-content>
+    </imd-data-table>
+    <br>
+    <br>
+    <br>
+    <div style="border: blue 2px solid">
+      <imd-select style="display: inline-block;" context="main/frm22/sfld11"></imd-select>
+      <imd-input style="display: inline-block;" context="main/frm22/fld81"></imd-input>
+      <imd-input style="display: inline-block;" context="main/frm22/fld80"></imd-input>
+      <br>
+      <imd-button context="main/frm22/oslte55"></imd-button>
+      <imd-button context="main/frm22/oslte56"></imd-button>
+      <imd-button context="main/frm22/clear"></imd-button>
+    </div>
+  </wr-content>
+</wr-page>

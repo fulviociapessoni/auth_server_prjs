@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?webml version="9.0.22.10"?>
+
+<WebProject xmlns:bpm="http://www.webratio.com/2009/WebML/BPM" xmlns:gr="http://www.webratio.com/2006/WebML/Graph" outputPath="${mobileapps_loc}/${project_name}" gr:showUnitContent="true" gr:showTooltip="true" enableProjectDependencies="true" toolVersion="9.0.22">
+  <ServiceDataProviders>
+    <IdentityProvider/>
+  </ServiceDataProviders>
+  <Roles/>
+  <bpm:BpmProjects/>
+  <BundleKey name="ACCOUNT_DISABLED"/>
+  <BundleKey name="BAD_CREDENTIALS"/>
+  <BundleKey name="BAD_REQUEST"/>
+  <BundleKey name="INTERNAL_ERROR"/>
+  <BundleKey name="MAX_LOGIN_ATTEMPTS_REACHED"/>
+  <BundleKey name="PASSWORD_EXPIRED"/>
+  <BundleKey name="UNAUTHORIZED"/>
+  <BundleKey name="VALIDATION_FAILED"/>
+  <ReferencedProject name="MyDS" natureId="com.webratio.ide.DataServiceNature" pid="MyDS"/>
+  <Property id="prop1" name="Emulator.screenSwitcher" value="true"/>
+</WebProject>

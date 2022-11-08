@@ -1,0 +1,14 @@
+<Screen xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="910" gr:y="355" id="av1#scr9" name="Friends" landmark="true">
+  <ViewComponents>
+    <List gr:x="0" gr:y="0" id="av1#scr9#lst3" checkable="false" distinct="false" dynamicSort="true" pageSize="1000">
+      <DataBinding classServiceRes="MyDS$cls3"/>
+      <DisplayAttributes classServiceAttribute="MyDS$att5"/>
+      <DisplayAttributes classServiceAttribute="MyDS$att6"/>
+      <DisplayAttributes classServiceAttribute="MyDS$att7"/>
+      <SortAttributes classServiceAttribute="MyDS$att5" order="ascending"/>
+    </List>
+  </ViewComponents>
+  <layout:Grid containerType="grid">
+    <layout:Row/>
+  </layout:Grid>
+</Screen>

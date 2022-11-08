@@ -1,0 +1,97 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-data-grid cols="main/lst12/data/{Attribute}*" [rows]="valueOf('main/lst12/data')" events="main/lst12/data/{Event}*">
+      <wr-content for="header[_identity_$userID]">
+        <wd-button variant="mat-icon-button" iconText="arrow_downward"></wd-button>
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_identity_$userID]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_identity_$firstName]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_identity_$firstName]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_identity_$lastName]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_identity_$lastName]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_identity_$email]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_identity_$email]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_identity_$passwordExpirationDate]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_identity_$passwordExpirationDate]">
+        {{ valueOf(&#039;.&#039;, row) | date:&#039;wr-timestamp&#039; }}
+      </wr-content>
+      <wr-content for="header[_identity_$authAdmin]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_identity_$authAdmin]">
+        {{ valueOf(&#039;.&#039;, row) | wrLocalize }}
+      </wr-content>
+      <wr-content for="header[_identity_$disabled]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_identity_$disabled]">
+        {{ valueOf(&#039;.&#039;, row) | wrLocalize }}
+      </wr-content>
+      <wr-content for="header[_identity_$expired]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_identity_$expired]">
+        {{ valueOf(&#039;.&#039;, row) | wrLocalize }}
+      </wr-content>
+      <wr-content for="header[_identity_$locked]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_identity_$locked]">
+        {{ valueOf(&#039;.&#039;, row) | wrLocalize }}
+      </wr-content>
+      <wr-content for="header[_identity_$attemptsNumber]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_identity_$attemptsNumber]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="event[oslte34]">
+        <wd-button variant="mat-button" color="primary"></wd-button>
+      </wr-content>
+      <wr-content for="event[oslte35]">
+        <wd-button variant="mat-button" color="primary"></wd-button>
+      </wr-content>
+      <wr-content for="event[oslte37]">
+        <wd-button variant="mat-button" color="primary"></wd-button>
+      </wr-content>
+    </wd-data-grid>
+      <br>
+      <br>
+      <br>
+    <div style="border: blue 2px solid">
+      <wd-input context="main/frm16/fld42"></wd-input>
+      <wd-password context="main/frm16/fld51"></wd-password>
+      <wd-input context="main/frm16/fld40"></wd-input>
+      <wd-input context="main/frm16/fld38"></wd-input>
+      <wd-input context="main/frm16/fld43"></wd-input>
+      <wd-input context="main/frm16/fld41" type="datetime-local"></wd-input>
+      <wd-input context="main/frm16/fld44"></wd-input>
+      <wd-button-toggle style="display: inline-block;" context="main/frm16/fld45"></wd-button-toggle>
+      <wd-button-toggle style="display: inline-block;" context="main/frm16/fld39"></wd-button-toggle>
+      <wd-button-toggle style="display: inline-block;" context="main/frm16/fld46"></wd-button-toggle>
+      <wd-button-toggle style="display: inline-block;" context="main/frm16/fld37"></wd-button-toggle>
+      <br>
+      <br>
+      <wd-button context="main/frm16/oslte36"></wd-button>
+      <wd-button context="main/frm16/oslte38"></wd-button>
+      <wd-button context="main/frm16/clear"></wd-button>
+    </div>
+  </wr-content>
+</wr-page>

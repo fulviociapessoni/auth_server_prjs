@@ -1,0 +1,113 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-card title="main/dtl7">
+      <wr-content for="content">
+        <wd-container elements="main/dtl7/data/{Attribute}*">
+          <wr-content for="element[_identity_$userID]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) }}
+              </span>
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$firstName]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) }}
+              </span>
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$lastName]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) }}
+              </span>
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$email]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) }}
+              </span>
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$passwordExpirationDate]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) | date:&#039;wr-timestamp&#039; }}
+              </span>
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$authAdmin]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) }}
+              </span>
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$disabled]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) }}
+              </span>
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$expired]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) }}
+              </span>
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$locked]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) }}
+              </span>
+            </span>
+          </wr-content>
+          <wr-content for="element[_identity_$attemptsNumber]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) }}
+              </span>
+            </span>
+          </wr-content>
+        </wd-container>
+      </wr-content>
+      <wr-content for="title[dtl7]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>

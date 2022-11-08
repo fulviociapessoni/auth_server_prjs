@@ -1,0 +1,75 @@
+<wr-page>
+  <wr-content for="bottom-bar">
+    <div>
+      <imd-select style="display: inline-block;" context="main/frm19/sfld5"></imd-select>
+      <imd-select style="display: inline-block;" context="main/frm19/sfld6"></imd-select>
+      <imd-button context="main/frm19/oslte46"></imd-button>
+      <imd-button context="main/frm19/clear"></imd-button>
+    </div>
+  </wr-content>
+  <wr-content for="content">
+    <imd-data-table cols="main/lst14/data/{Attribute}*" [rows]="valueOf('main/lst14/data')">
+      <wr-content for="header[_application__permission_$oid]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+        <imd-button appearance="clear" event="sortBy" iconPosition="icon-only" icon="chevron-down" size="small"></imd-button>
+      </wr-content>
+      <wr-content for="header[_application__permission_$userId]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="header[_application__permission_$applicationId]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="header[_application__permission_$permission]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="header[_application__permission_$status]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="header[_application__permission_$expirationDate]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="header[_application__permission_$updatedAt]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_application__permission_$oid]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="data[_application__permission_$userId]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="data[_application__permission_$applicationId]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="data[_application__permission_$permission]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="data[_application__permission_$status]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="data[_application__permission_$expirationDate]">
+        {{ valueOf(&#039;.&#039;, row) | date:&#039;wr-timestamp&#039; }}
+      </wr-content>
+      <wr-content for="data[_application__permission_$updatedAt]">
+        {{ valueOf(&#039;.&#039;, row) | date:&#039;wr-timestamp&#039; }}
+      </wr-content>
+      <wr-content for="paginator">
+        <imd-paginator></imd-paginator>
+      </wr-content>
+    </imd-data-table>
+    <br>
+    <br>
+    <br>
+    <div style="border: blue 2px solid">
+      <imd-select style="display: inline-block;" context="main/frm20/sfld7"></imd-select>
+      <imd-select style="display: inline-block;" context="main/frm20/sfld8"></imd-select>
+      <imd-input style="display: inline-block;" context="main/frm20/fld71"></imd-input>
+      <imd-select style="display: inline-block;" context="main/frm20/sfld9"></imd-select>
+      <imd-datetime style="display: inline-block;" context="main/frm20/fld73"></imd-datetime>
+      <imd-datetime style="display: inline-block;" context="main/frm20/fld74"></imd-datetime>
+      <br>
+      <imd-button context="main/frm20/oslte48"></imd-button>
+      <imd-button context="main/frm20/oslte51"></imd-button>
+      <imd-button context="main/frm20/clear"></imd-button>
+    </div>
+  </wr-content>
+</wr-page>

@@ -1,0 +1,9 @@
+<wr-page>
+  <wr-content for="content">
+    <imd-button context="main/gctu3/oslte10" iconName="log-out-outline" [label]="'' | wrLocalize"></imd-button>
+  </wr-content>
+</wr-page>
+<imd-button context="main/gctu3/oslte11"></imd-button>
+<imd-button context="main/gctu3/oslte12"></imd-button>
+<imd-button context="main/gctu3/oslte13"></imd-button>
+<imd-button context="main/gctu3/oslte14"></imd-button>

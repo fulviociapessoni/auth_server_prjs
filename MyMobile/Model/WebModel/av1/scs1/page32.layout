@@ -1,0 +1,48 @@
+<wr-page>
+  <wr-content for="content">
+    <imd-card title="main/dtl8">
+      <wr-content for="title[dtl8]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="content">
+        <imd-container elements="main/dtl8/data/{Attribute}*">
+          <wr-content for="element[_application_$appID]">
+            <span>
+              {{ valueOf(&#039;.&#039;) }}
+            </span>
+          </wr-content>
+          <wr-content for="element[_application_$name]">
+            <span>
+              {{ valueOf(&#039;.&#039;) }}
+            </span>
+          </wr-content>
+          <wr-content for="element[_application_$type]">
+            <span>
+              {{ valueOf(&#039;.&#039;) }}
+            </span>
+          </wr-content>
+          <wr-content for="element[_application_$description]">
+            <span>
+              {{ valueOf(&#039;.&#039;) }}
+            </span>
+          </wr-content>
+          <wr-content for="element[_application_$authorities]">
+            <span>
+              {{ valueOf(&#039;.&#039;) }}
+            </span>
+          </wr-content>
+          <wr-content for="element[_application_$accessTokenValidity]">
+            <span>
+              {{ valueOf(&#039;.&#039;) }}
+            </span>
+          </wr-content>
+          <wr-content for="element[_application_$refreshTokenValidity]">
+            <span>
+              {{ valueOf(&#039;.&#039;) }}
+            </span>
+          </wr-content>
+        </imd-container>
+      </wr-content>
+    </imd-card>
+  </wr-content>
+</wr-page>

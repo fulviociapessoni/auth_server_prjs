@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?webml version="9.0.22.10"?>
+
+<WebProject xmlns:gr="http://www.webratio.com/2006/WebML/Graph" uuid="L972Q2C3_2QW" outputPath="${webapps_loc}/${project_name}" gr:showUnitContent="true" gr:showTooltip="true" enableProjectDependencies="true" mailProvider="smtp1" toolVersion="9.0.22">
+  <ServiceDataProviders>
+    <SMTPServer id="smtp1" name="MyMail" url="mail.provider.com" port="000" username="username" password="cGFzc3dvcmQ=" defaultFrom="myaddress@provider.com" cryptedPassword="true">
+      <Property id="smtp1#prop4" name="mail.smtp.ssl.enable" value="true"/>
+    </SMTPServer>
+  </ServiceDataProviders>
+  <Roles/>
+</WebProject>

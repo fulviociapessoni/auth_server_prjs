@@ -1,0 +1,113 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="505" gr:y="1200" id="wv1#area2#page33" name="Permission" landmark="true">
+  <ViewComponents>
+    <Form gr:x="0" gr:y="15" id="wv1#area2#page33#frm19" name="Search">
+      <SelectionField id="wv1#area2#page33#frm19#sfld5" optionsDistinct="false" emptyOption="true" name="Identity" validationOrder="wv1#area2#page33#frm19#sfld5#mnd32">
+        <OptionsDataBinding authServiceRes="_identity_"/>
+        <OptionsAttributes authServiceOutput="_identity_$userID"/>
+        <OptionsSortAttributes authServiceOutput="_identity_$userID" order="ascending"/>
+        <VRules>
+          <MandatoryValidationRule id="wv1#area2#page33#frm19#sfld5#mnd32" name="Mandatory32"/>
+        </VRules>
+      </SelectionField>
+      <SelectionField id="wv1#area2#page33#frm19#sfld6" optionsDistinct="false" emptyOption="true" name="Application" validationOrder="wv1#area2#page33#frm19#sfld6#mnd31">
+        <OptionsDataBinding authServiceRes="_application_"/>
+        <OptionsAttributes authServiceOutput="_application_$appID"/>
+        <OptionsSortAttributes authServiceOutput="_application_$appID" order="ascending"/>
+        <VRules>
+          <MandatoryValidationRule id="wv1#area2#page33#frm19#sfld6#mnd31" name="Mandatory31"/>
+        </VRules>
+      </SelectionField>
+      <Events>
+        <OnSelectEvent id="wv1#area2#page33#frm19#oslte46" name="Search" validate="true">
+          <NavigationFlow id="wv1#area2#page33#frm19#oslte46#nf108" to="wv1#area2#page33#lst14">
+            <ParameterBinding id="wv1#area2#page33#frm19#oslte46#nf108#par257" source="{wv1#area2#page33#frm19#sfld6}value._application_$appID" target="_application__permission_$appID" name="Application [App ID] - App ID [string]"/>
+            <ParameterBinding id="wv1#area2#page33#frm19#oslte46#nf108#par258" source="{wv1#area2#page33#frm19#sfld5}value._identity_$userID" target="_application__permission_$userID" name="Identity [User ID] - User ID [string]"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </Form>
+    <List gr:x="275" gr:y="0" id="wv1#area2#page33#lst14" checkable="false" distinct="false" dynamicSort="true">
+      <DataBinding authServiceRes="_application__permission_"/>
+      <SortAttributes authServiceOutput="_application__permission_$oid" order="ascending"/>
+      <DisplayAttributes authServiceOutput="_application__permission_$oid"/>
+      <DisplayAttributes authServiceOutput="_application__permission_$userId"/>
+      <DisplayAttributes authServiceOutput="_application__permission_$applicationId"/>
+      <DisplayAttributes authServiceOutput="_application__permission_$permission"/>
+      <DisplayAttributes authServiceOutput="_application__permission_$status"/>
+      <DisplayAttributes authServiceOutput="_application__permission_$expirationDate"/>
+      <DisplayAttributes authServiceOutput="_application__permission_$updatedAt"/>
+      <Events>
+        <OnSelectEvent id="wv1#area2#page33#lst14#oslte49" name="Delete" validate="true">
+          <NavigationFlow id="wv1#area2#page33#lst14#oslte49#nf113" to="wv1#area2#act36">
+            <ParameterBinding id="wv1#area2#page33#lst14#oslte49#nf113#par267" source="data._application__permission_$applicationId" passing="true" name="App ID - PASSING"/>
+            <ParameterBinding id="wv1#area2#page33#lst14#oslte49#nf113#par268" source="data._application__permission_$userId" passing="true" name="User ID - PASSING"/>
+            <ParameterBinding id="wv1#area2#page33#lst14#oslte49#nf113#par271" source="data._application__permission_$oid" target="wv1#area2#act36._permission_delete$permissionID" name="oid - Permission ID"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv1#area2#page33#lst14#oslte50" name="Edit" validate="true">
+          <NavigationFlow id="wv1#area2#page33#lst14#oslte50#nf114" to="wv1#area2#page33#frm20">
+            <ParameterBinding id="wv1#area2#page33#lst14#oslte50#nf114#par272" source="data._application__permission_$applicationId" target="{wv1#area2#page33#frm20#sfld8}presel._application_$appID" name="App ID - Application [App ID] - Preselection"/>
+            <ParameterBinding id="wv1#area2#page33#lst14#oslte50#nf114#par273" source="data._application__permission_$expirationDate" target="{wv1#area2#page33#frm20#fld73}value" name="Expiration Date - Expiration Date"/>
+            <ParameterBinding id="wv1#area2#page33#lst14#oslte50#nf114#par274" source="data._application__permission_$userId" target="{wv1#area2#page33#frm20#sfld7}presel._identity_$userID" name="User ID - Identity [User ID] - Preselection"/>
+            <ParameterBinding id="wv1#area2#page33#lst14#oslte50#nf114#par275" source="data._application__permission_$permission" target="{wv1#area2#page33#frm20#fld71}value" name="Permission - Permission"/>
+            <ParameterBinding id="wv1#area2#page33#lst14#oslte50#nf114#par276" source="data._application__permission_$status" target="{wv1#area2#page33#frm20#sfld9}presel.0" name="Status - Status - Preselection"/>
+            <ParameterBinding id="wv1#area2#page33#lst14#oslte50#nf114#par277" source="data._application__permission_$updatedAt" target="{wv1#area2#page33#frm20#fld74}value" name="Updated At - Updated At"/>
+            <ParameterBinding id="wv1#area2#page33#lst14#oslte50#nf114#par290" source="data._application__permission_$oid" target="{wv1#area2#page33#frm20#fld77}value" name="oid - oid"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </List>
+    <Form gr:x="5" gr:y="140" id="wv1#area2#page33#frm20" name="Form">
+      <SelectionField id="wv1#area2#page33#frm20#sfld7" name="Identity" optionsDistinct="false" emptyOption="true" validationOrder="wv1#area2#page33#frm20#sfld7#mnd33">
+        <OptionsDataBinding authServiceRes="_identity_"/>
+        <OptionsAttributes authServiceOutput="_identity_$userID"/>
+        <OptionsSortAttributes authServiceOutput="_identity_$userID" order="ascending"/>
+        <VRules>
+          <MandatoryValidationRule id="wv1#area2#page33#frm20#sfld7#mnd33" name="Mandatory32"/>
+        </VRules>
+      </SelectionField>
+      <SelectionField id="wv1#area2#page33#frm20#sfld8" name="Application" optionsDistinct="false" emptyOption="true" validationOrder="wv1#area2#page33#frm20#sfld8#mnd34">
+        <OptionsDataBinding authServiceRes="_application_"/>
+        <OptionsAttributes authServiceOutput="_application_$appID"/>
+        <OptionsSortAttributes authServiceOutput="_application_$appID" order="ascending"/>
+        <VRules>
+          <MandatoryValidationRule id="wv1#area2#page33#frm20#sfld8#mnd34" name="Mandatory31"/>
+        </VRules>
+      </SelectionField>
+      <Field id="wv1#area2#page33#frm20#fld71" type="string" modifiable="true" name="Permission" validationOrder="wv1#area2#page33#frm20#fld71#mnd35">
+        <VRules>
+          <MandatoryValidationRule id="wv1#area2#page33#frm20#fld71#mnd35" name="Mandatory35"/>
+        </VRules>
+      </Field>
+      <Field id="wv1#area2#page33#frm20#fld73" type="date" modifiable="true" name="Expiration Date"/>
+      <Field id="wv1#area2#page33#frm20#fld74" type="date" modifiable="true" name="Updated At"/>
+      <Events>
+        <OnSelectEvent id="wv1#area2#page33#frm20#oslte48" name="Create" validate="true">
+          <NavigationFlow id="wv1#area2#page33#frm20#oslte48#nf110" to="wv1#area2#act35">
+            <ParameterBinding id="wv1#area2#page33#frm20#oslte48#nf110#par259" source="{wv1#area2#page33#frm20#sfld8}value._application_$appID" target="wv1#area2#act35._permission_create$applicationId" name="Application [App ID] - App ID"/>
+            <ParameterBinding id="wv1#area2#page33#frm20#oslte48#nf110#par260" source="{wv1#area2#page33#frm20#fld73}value" target="wv1#area2#act35._permission_create$expirationDate" name="Expiration Date - Expiration Date"/>
+            <ParameterBinding id="wv1#area2#page33#frm20#oslte48#nf110#par261" source="{wv1#area2#page33#frm20#fld71}value" target="wv1#area2#act35._permission_create$permission" name="Permission - Permission"/>
+            <ParameterBinding id="wv1#area2#page33#frm20#oslte48#nf110#par263" source="{wv1#area2#page33#frm20#fld74}value" target="wv1#area2#act35._permission_create$updatedAt" name="Updated At - Updated At"/>
+            <ParameterBinding id="wv1#area2#page33#frm20#oslte48#nf110#par264" source="{wv1#area2#page33#frm20#sfld7}value._identity_$userID" target="wv1#area2#act35._permission_create$userId" name="Identity [User ID] - User ID"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv1#area2#page33#frm20#oslte51" name="Update" validate="true">
+          <NavigationFlow id="wv1#area2#page33#frm20#oslte51#nf115" to="wv1#area2#act37">
+            <ParameterBinding id="wv1#area2#page33#frm20#oslte51#nf115#par278" source="{wv1#area2#page33#frm20#sfld8}value._application_$appID" target="wv1#area2#act37._permission_update$applicationId" name="Application [App ID] - App ID"/>
+            <ParameterBinding id="wv1#area2#page33#frm20#oslte51#nf115#par279" source="{wv1#area2#page33#frm20#fld73}value" target="wv1#area2#act37._permission_update$expirationDate" name="Expiration Date - Expiration Date"/>
+            <ParameterBinding id="wv1#area2#page33#frm20#oslte51#nf115#par280" source="{wv1#area2#page33#frm20#fld71}value" target="wv1#area2#act37._permission_update$permission" name="Permission - Permission"/>
+            <ParameterBinding id="wv1#area2#page33#frm20#oslte51#nf115#par281" source="{wv1#area2#page33#frm20#sfld9}value.0" target="wv1#area2#act37._permission_update$status" name="Status - Status"/>
+            <ParameterBinding id="wv1#area2#page33#frm20#oslte51#nf115#par282" source="{wv1#area2#page33#frm20#fld74}value" target="wv1#area2#act37._permission_update$updatedAt" name="Updated At - Updated At"/>
+            <ParameterBinding id="wv1#area2#page33#frm20#oslte51#nf115#par283" source="{wv1#area2#page33#frm20#sfld7}value._identity_$userID" target="wv1#area2#act37._permission_update$userId" name="Identity [User ID] - User ID"/>
+            <ParameterBinding id="wv1#area2#page33#frm20#oslte51#nf115#par292" source="{wv1#area2#page33#frm20#fld77}value" target="wv1#area2#act37._permission_update$permissionID" name="oid - Permission ID"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <SelectionField id="wv1#area2#page33#frm20#sfld9" optionsDistinct="false" emptyOption="true" name="Status" optionsValues="APPROVED,DENIED"/>
+      <Field id="wv1#area2#page33#frm20#fld77" type="string" modifiable="false" name="oid"/>
+    </Form>
+  </ViewComponents>
+  <layout:Grid containerType="grid">
+    <layout:Row/>
+  </layout:Grid>
+</Page>

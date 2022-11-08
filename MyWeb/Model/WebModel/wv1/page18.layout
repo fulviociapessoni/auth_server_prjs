@@ -1,0 +1,40 @@
+<wr-page>
+  <wr-content for="logo">
+    <img src="assets/WebDefault/images/webratio-logo.png" style="max-width:200px; position:absolute; top: 20px; margin:0 auto;">
+  </wr-content>
+  <wr-content for="login">
+    <wd-alert [messages]="valueOf('main/msg18/messages')" [localized]="true" type="warn"></wd-alert>
+    <wd-card title="model:main/frm12">
+      <wr-content for="title[frm12]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="content">
+        <form>
+          <wd-input 
+              [showClearIcon]="false" 
+              floatLabel="never"
+              context="model:main/frm12/fld34"
+              [disableAutocompletion]="true">
+          </wd-input>
+          <wd-password 
+              [showEyeButton]="true" 
+              floatLabel="never" 
+              context="model:main/frm12/fld35">
+          </wd-password>
+          <wd-checkboxes
+              context="model:main/frm12/fld36" [showLabel]="false">
+          </wd-checkboxes>
+          <wd-button 
+              context="model:main/frm12/oslte14" 
+              color="primary">
+          </wd-button>
+          <div style="height: 10px;"></div>
+          <wd-button 
+              context="model:main/frm12/oslte33" 
+              color="primary">
+          </wd-button>
+        </form>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>

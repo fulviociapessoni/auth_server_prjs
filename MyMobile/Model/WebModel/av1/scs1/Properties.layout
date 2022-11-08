@@ -1,0 +1,12 @@
+<wr-page>
+  <wr-content for="left-top-bar">
+    <imd-tab-bar events="landmarks/{Landmark}*" style="background-color: white;">
+      <wr-content for="tab[scs1]">
+        <imd-tab-button context="page25"></imd-tab-button>
+        <imd-tab-button context="page31"></imd-tab-button>
+        <imd-tab-button context="page33"></imd-tab-button>
+        <imd-tab-button context="page36"></imd-tab-button>
+      </wr-content>
+    </imd-tab-bar>
+  </wr-content>
+</wr-page>

@@ -1,0 +1,16 @@
+<Screen xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="av1#scr8" name="LogoutScreen" gr:x="1085" gr:y="25">
+  <ViewComponents>
+    <ViewComponent id="av1#scr8#gctu1" name="Logout" gr:x="0" gr:y="10">
+      <Events>
+        <OnSelectEvent id="av1#scr8#gctu1#oslte8" name="Logout">
+          <NavigationFlow id="av1#scr8#gctu1#oslte8#nf20" to="av1#act6" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </ViewComponent>
+    <Details id="av1#scr8#dtl1" gr:x="115" gr:y="0">
+      <Events/>
+      <DataBinding userServiceRes="MyDS$UserService"/>
+      <DisplayAttributes userServiceAttribute="MyDS$userName"/>
+    </Details>
+  </ViewComponents>
+</Screen>

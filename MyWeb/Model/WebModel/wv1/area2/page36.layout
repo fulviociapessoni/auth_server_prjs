@@ -1,0 +1,56 @@
+<wr-page>
+  <wr-content for="breadcrumb">
+    <div>
+      <wd-select style="display: inline-block;" context="main/frm21/sfld10"></wd-select>
+      <wd-button context="main/frm21/oslte52"></wd-button>
+      <wd-button context="main/frm21/clear"></wd-button>
+    </div>
+  </wr-content>
+  <wr-content for="page-content">
+    <wd-data-grid cols="main/lst15/data/{Attribute}*" [rows]="valueOf('main/lst15/data')" events="main/lst15/data/{Event}*">
+      <wr-content for="header[_claim_$oid]">
+        <wd-button variant="mat-icon-button" iconText="arrow_downward"></wd-button>
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_claim_$oid]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_claim_$key]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_claim_$key]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_claim_$value]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_claim_$value]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_claim_$userId]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_claim_$userId]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="event[oslte53]">
+        <wd-button variant="mat-button" color="primary"></wd-button>
+      </wr-content>
+      <wr-content for="event[oslte54]">
+        <wd-button variant="mat-button" color="primary"></wd-button>
+      </wr-content>
+    </wd-data-grid>
+    <br>
+    <br>
+    <br>
+    <div style="border: blue 2px solid">
+      <wd-select style="display: inline-block;" context="main/frm22/sfld11"></wd-select>
+      <wd-input style="display: inline-block;" context="main/frm22/fld81"></wd-input>
+      <wd-input style="display: inline-block;" context="main/frm22/fld80"></wd-input>
+      <br>
+      <wd-button context="main/frm22/oslte55"></wd-button>
+      <wd-button context="main/frm22/oslte56"></wd-button>
+      <wd-button context="main/frm22/clear"></wd-button>
+    </div>
+  </wr-content>
+</wr-page>

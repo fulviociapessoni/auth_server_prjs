@@ -1,0 +1,77 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-data-grid cols="main/lst13/data/{Attribute}*" [rows]="valueOf('main/lst13/data')" events="main/lst13/data/{Event}*">
+      <wr-content for="header[_application_$name]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_application_$name]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="event[oslte41]">
+        <wd-button variant="mat-button" color="primary"></wd-button>
+      </wr-content>
+      <wr-content for="event[oslte42]">
+        <wd-button variant="mat-button" color="primary"></wd-button>
+      </wr-content>
+      <wr-content for="event[oslte43]">
+        <wd-button variant="mat-button" color="primary"></wd-button>
+      </wr-content>
+      <wr-content for="header[_application_$appID]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_application_$appID]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_application_$type]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_application_$type]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_application_$description]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_application_$description]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_application_$authorities]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_application_$authorities]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_application_$accessTokenValidity]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_application_$accessTokenValidity]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_application_$refreshTokenValidity]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_application_$refreshTokenValidity]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+    </wd-data-grid>
+    <br>
+    <br>
+    <br>
+    <div style="border: blue 2px solid">
+      <wd-input context="main/frm18/fld63"></wd-input>
+      <wd-input context="main/frm18/fld64"></wd-input>
+      <wd-select context="main/frm18/sfld18"></wd-select>
+      <wd-input context="main/frm18/fld66"></wd-input>
+      <wd-input context="main/frm18/fld67"></wd-input>
+      <wd-checkboxes context="main/frm18/sfld15"></wd-checkboxes>
+      <wd-checkboxes context="main/frm18/sfld17"></wd-checkboxes>
+      <wd-checkboxes context="main/frm18/sfld16"></wd-checkboxes>
+      <wd-input context="main/frm18/fld68"></wd-input>
+      <wd-input context="main/frm18/fld69"></wd-input>
+      <br>
+      <br>
+      <wd-button context="main/frm18/oslte44"></wd-button>
+      <wd-button context="main/frm18/oslte45"></wd-button>
+      <wd-button context="main/frm18/clear"></wd-button>
+    </div>
+  </wr-content>
+</wr-page>

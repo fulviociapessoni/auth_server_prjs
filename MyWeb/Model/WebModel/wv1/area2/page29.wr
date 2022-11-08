@@ -1,0 +1,6 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="0" id="wv1#area2#page29" name="Admin">
+  <ViewComponents/>
+  <layout:Grid containerType="grid">
+    <layout:Row/>
+  </layout:Grid>
+</Page>

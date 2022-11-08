@@ -1,0 +1,83 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-card title="main/dtl8">
+      <wr-content for="content">
+        <wd-container elements="main/dtl8/data/{Attribute}*">
+          <wr-content for="element[_application_$appID]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) }}
+              </span>
+            </span>
+          </wr-content>
+          <wr-content for="element[_application_$name]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) }}
+              </span>
+            </span>
+          </wr-content>
+          <wr-content for="element[_application_$type]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) }}
+              </span>
+            </span>
+          </wr-content>
+          <wr-content for="element[_application_$description]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) }}
+              </span>
+            </span>
+          </wr-content>
+          <wr-content for="element[_application_$authorities]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) }}
+              </span>
+            </span>
+          </wr-content>
+          <wr-content for="element[_application_$accessTokenValidity]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) }}
+              </span>
+            </span>
+          </wr-content>
+          <wr-content for="element[_application_$refreshTokenValidity]">
+            <span>
+              <span class="header">
+                {{ labelOf(&#039;.&#039;) | wrLocalize }}
+              </span>
+              <span class="value">
+                {{ valueOf(&#039;.&#039;) }}
+              </span>
+            </span>
+          </wr-content>
+        </wd-container>
+      </wr-content>
+      <wr-content for="title[dtl8]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>

@@ -1,0 +1,111 @@
+<Screen xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="465" gr:y="120" id="av1#scs1#page25" name="Identity" landmark="true">
+  <ViewComponents>
+    <List id="av1#scs1#page25#lst12" gr:x="270" gr:y="0" checkable="false" distinct="false" dynamicSort="true">
+      <DataBinding authServiceRes="_identity_"/>
+      <SortAttributes authServiceOutput="_identity_$userID" order="ascending"/>
+      <Events>
+        <OnSelectEvent id="av1#scs1#page25#lst12#oslte34" name="Details" validate="true">
+          <NavigationFlow id="av1#scs1#page25#lst12#oslte34#nf78" to="av1#scs1#page26#dtl7">
+            <ParameterBinding id="av1#scs1#page25#lst12#oslte34#nf78#par144" source="data._identity_$userID" target="_identity_$userID" name="User ID - User ID [string]"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="av1#scs1#page25#lst12#oslte35" name="Delete" validate="true">
+          <NavigationFlow id="av1#scs1#page25#lst12#oslte35#nf83" to="av1#scs1#act28">
+            <ParameterBinding id="av1#scs1#page25#lst12#oslte35#nf83#par147" source="data._identity_$userID" target="av1#scs1#act28._identity_delete$userID" name="User ID - User ID"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="av1#scs1#page25#lst12#oslte37" name="Edit" validate="true">
+          <NavigationFlow id="av1#scs1#page25#lst12#oslte37#nf87" to="av1#scs1#page25#frm16">
+            <ParameterBinding id="av1#scs1#page25#lst12#oslte37#nf87#par161" source="data._identity_$attemptsNumber" target="{av1#scs1#page25#frm16#fld44}value" name="Attempts Number - Attempts Number"/>
+            <ParameterBinding id="av1#scs1#page25#lst12#oslte37#nf87#par162" source="data._identity_$email" target="{av1#scs1#page25#frm16#fld40}value" name="EMail - EMail"/>
+            <ParameterBinding id="av1#scs1#page25#lst12#oslte37#nf87#par163" source="data._identity_$firstName" target="{av1#scs1#page25#frm16#fld38}value" name="FirstName - FirstName"/>
+            <ParameterBinding id="av1#scs1#page25#lst12#oslte37#nf87#par164" source="data._identity_$authAdmin" target="{av1#scs1#page25#frm16#fld45}value" name="Is Auth Admin - Is Auth Admin"/>
+            <ParameterBinding id="av1#scs1#page25#lst12#oslte37#nf87#par165" source="data._identity_$disabled" target="{av1#scs1#page25#frm16#fld39}value" name="Is Disabled - Is Disabled"/>
+            <ParameterBinding id="av1#scs1#page25#lst12#oslte37#nf87#par166" source="data._identity_$expired" target="{av1#scs1#page25#frm16#fld46}value" name="Is Expired - Is Expired"/>
+            <ParameterBinding id="av1#scs1#page25#lst12#oslte37#nf87#par167" source="data._identity_$locked" target="{av1#scs1#page25#frm16#fld37}value" name="Is Locked - Is Locked"/>
+            <ParameterBinding id="av1#scs1#page25#lst12#oslte37#nf87#par168" source="data._identity_$lastName" target="{av1#scs1#page25#frm16#fld43}value" name="LastName - LastName"/>
+            <ParameterBinding id="av1#scs1#page25#lst12#oslte37#nf87#par169" source="data._identity_$passwordExpirationDate" target="{av1#scs1#page25#frm16#fld41}value" name="Password Expiration Date - Password Expiration Date"/>
+            <ParameterBinding id="av1#scs1#page25#lst12#oslte37#nf87#par170" source="data._identity_$userID" target="{av1#scs1#page25#frm16#fld42}value" name="User ID - User ID"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <DisplayAttributes authServiceOutput="_identity_$userID"/>
+      <DisplayAttributes authServiceOutput="_identity_$firstName"/>
+      <DisplayAttributes authServiceOutput="_identity_$lastName"/>
+      <DisplayAttributes authServiceOutput="_identity_$email"/>
+      <DisplayAttributes authServiceOutput="_identity_$passwordExpirationDate"/>
+      <DisplayAttributes authServiceOutput="_identity_$authAdmin"/>
+      <DisplayAttributes authServiceOutput="_identity_$disabled"/>
+      <DisplayAttributes authServiceOutput="_identity_$expired"/>
+      <DisplayAttributes authServiceOutput="_identity_$locked"/>
+      <DisplayAttributes authServiceOutput="_identity_$attemptsNumber"/>
+    </List>
+    <Form gr:x="0" gr:y="15" id="av1#scs1#page25#frm16" name="Form">
+      <Events>
+        <OnSelectEvent id="av1#scs1#page25#frm16#oslte36" name="Create" validate="true">
+          <NavigationFlow id="av1#scs1#page25#frm16#oslte36#nf85" to="av1#scs1#act29">
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte36#nf85#par149" source="{av1#scs1#page25#frm16#fld44}value" target="av1#scs1#act29._identity_create$attemptsNumber" name="Attempts Number - Attempts Number"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte36#nf85#par150" source="{av1#scs1#page25#frm16#fld40}value" target="av1#scs1#act29._identity_create$email" name="EMail - EMail"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte36#nf85#par151" source="{av1#scs1#page25#frm16#fld38}value" target="av1#scs1#act29._identity_create$firstName" name="FirstName - FirstName"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte36#nf85#par152" source="{av1#scs1#page25#frm16#fld45}value" target="av1#scs1#act29._identity_create$authAdmin" name="Is Auth Admin - Is Auth Admin"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte36#nf85#par153" source="{av1#scs1#page25#frm16#fld39}value" target="av1#scs1#act29._identity_create$disabled" name="Is Disabled - Is Disabled"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte36#nf85#par154" source="{av1#scs1#page25#frm16#fld46}value" target="av1#scs1#act29._identity_create$expired" name="Is Expired - Is Expired"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte36#nf85#par155" source="{av1#scs1#page25#frm16#fld37}value" target="av1#scs1#act29._identity_create$locked" name="Is Locked - Is Locked"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte36#nf85#par156" source="{av1#scs1#page25#frm16#fld43}value" target="av1#scs1#act29._identity_create$lastName" name="LastName - LastName"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte36#nf85#par157" source="{av1#scs1#page25#frm16#fld41}value" target="av1#scs1#act29._identity_create$passwordExpirationDate" name="Password Expiration Date - Password Expiration Date"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte36#nf85#par158" source="{av1#scs1#page25#frm16#fld42}value" target="av1#scs1#act29._identity_create$userID" name="User ID - User ID"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte36#nf85#par195" source="{av1#scs1#page25#frm16#fld51}value" target="av1#scs1#act29._identity_create$password" name="Password - Password"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="av1#scs1#page25#frm16#oslte38" name="Update" validate="true">
+          <NavigationFlow id="av1#scs1#page25#frm16#oslte38#nf88" to="av1#scs1#act30">
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte38#nf88#par171" source="{av1#scs1#page25#frm16#fld44}value" target="av1#scs1#act30._identity_update$attemptsNumber" name="Attempts Number - Attempts Number"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte38#nf88#par172" source="{av1#scs1#page25#frm16#fld40}value" target="av1#scs1#act30._identity_update$email" name="EMail - EMail"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte38#nf88#par173" source="{av1#scs1#page25#frm16#fld38}value" target="av1#scs1#act30._identity_update$firstName" name="FirstName - FirstName"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte38#nf88#par174" source="{av1#scs1#page25#frm16#fld45}value" target="av1#scs1#act30._identity_update$authAdmin" name="Is Auth Admin - Is Auth Admin"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte38#nf88#par175" source="{av1#scs1#page25#frm16#fld39}value" target="av1#scs1#act30._identity_update$disabled" name="Is Disabled - Is Disabled"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte38#nf88#par176" source="{av1#scs1#page25#frm16#fld46}value" target="av1#scs1#act30._identity_update$expired" name="Is Expired - Is Expired"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte38#nf88#par177" source="{av1#scs1#page25#frm16#fld37}value" target="av1#scs1#act30._identity_update$locked" name="Is Locked - Is Locked"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte38#nf88#par178" source="{av1#scs1#page25#frm16#fld43}value" target="av1#scs1#act30._identity_update$lastName" name="LastName - LastName"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte38#nf88#par179" source="{av1#scs1#page25#frm16#fld41}value" target="av1#scs1#act30._identity_update$passwordExpirationDate" name="Password Expiration Date - Password Expiration Date"/>
+            <ParameterBinding id="av1#scs1#page25#frm16#oslte38#nf88#par180" source="{av1#scs1#page25#frm16#fld42}value" target="av1#scs1#act30._identity_update$userID" name="User ID - User ID"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <Field id="av1#scs1#page25#frm16#fld37" modifiable="true" name="Is Locked" type="boolean">
+        <VRules/>
+      </Field>
+      <Field id="av1#scs1#page25#frm16#fld38" modifiable="true" name="FirstName" type="string">
+        <VRules/>
+      </Field>
+      <Field id="av1#scs1#page25#frm16#fld39" modifiable="true" name="Is Disabled" type="boolean">
+        <VRules/>
+      </Field>
+      <Field id="av1#scs1#page25#frm16#fld40" modifiable="true" name="EMail" type="string">
+        <VRules/>
+      </Field>
+      <Field id="av1#scs1#page25#frm16#fld41" modifiable="true" name="Password Expiration Date" type="timestamp">
+        <VRules/>
+      </Field>
+      <Field id="av1#scs1#page25#frm16#fld42" modifiable="true" name="User ID" type="string">
+        <VRules/>
+      </Field>
+      <Field id="av1#scs1#page25#frm16#fld43" modifiable="true" name="LastName" type="string">
+        <VRules/>
+      </Field>
+      <Field id="av1#scs1#page25#frm16#fld44" modifiable="true" name="Attempts Number" type="integer">
+        <VRules/>
+      </Field>
+      <Field id="av1#scs1#page25#frm16#fld45" modifiable="true" name="Is Auth Admin" type="boolean">
+        <VRules/>
+      </Field>
+      <Field id="av1#scs1#page25#frm16#fld46" modifiable="true" name="Is Expired" type="boolean">
+        <VRules/>
+      </Field>
+      <Field id="av1#scs1#page25#frm16#fld51" type="password" modifiable="true" name="Password"/>
+    </Form>
+  </ViewComponents>
+  <layout:Grid containerType="grid">
+    <layout:Row/>
+  </layout:Grid>
+</Screen>

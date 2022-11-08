@@ -1,0 +1,40 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="wv1#page18" name="Sign in" gr:x="50" gr:y="60" layout:pageTemplate="WebDefault/Login" inheritedAbstractPagesManual="true">
+  <ViewComponents>
+    <Form id="wv1#page18#frm12" name="Sign in" gr:x="0" gr:y="85">
+      <Events>
+        <OnSelectEvent id="wv1#page18#frm12#oslte14" name="Sign in" validate="true">
+          <NavigationFlow id="wv1#page18#frm12#oslte14#nf48" to="wv1#act14">
+            <ParameterBinding id="wv1#page18#frm12#oslte14#nf48#par110" source="{wv1#page18#frm12#fld34}value" target="wv1#act14.tlads0#ad14#ipd14#pdp49" name="Username - Username"/>
+            <ParameterBinding id="wv1#page18#frm12#oslte14#nf48#par111" source="{wv1#page18#frm12#fld35}value" target="wv1#act14.tlads0#ad14#ipd14#pdp50" name="Password - Password"/>
+            <ParameterBinding id="wv1#page18#frm12#oslte14#nf48#par112" source="{wv1#page18#frm12#fld36}value" target="wv1#act14.tlads0#ad14#ipd14#pdp51" name="Remember Me - Remember Me"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv1#page18#frm12#oslte33" name="Login As Admin" validate="true">
+          <NavigationFlow id="wv1#page18#frm12#oslte33#nf76" to="wv1#act14">
+            <ParameterBinding id="wv1#page18#frm12#oslte33#nf76#par141" sourceValue="W3bR@t10p@$$w0rd" target="wv1#act14.tlads0#ad14#ipd14#pdp50" name="&quot;W3bR@t10p@$$w0rd&quot; - Password"/>
+            <ParameterBinding id="wv1#page18#frm12#oslte33#nf76#par142" sourceValue="admin" target="wv1#act14.tlads0#ad14#ipd14#pdp49" name="&quot;admin&quot; - Username"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <Field id="wv1#page18#frm12#fld34" name="Username" type="string" modifiable="true" validationOrder="wv1#page18#frm12#fld34#mnd29" value="MyWebLane1">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page18#frm12#fld34#mnd29" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="wv1#page18#frm12#fld35" name="Password" type="string" modifiable="true" validationOrder="wv1#page18#frm12#fld35#mnd30" value="MyWebLane11!">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page18#frm12#fld35#mnd30" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="wv1#page18#frm12#fld36" name="Remember Me" type="boolean" modifiable="true">
+        <VRules/>
+      </Field>
+    </Form>
+    <Message id="wv1#page18#msg18" name="Sign in error" gr:x="0" gr:y="0">
+      <Events/>
+    </Message>
+  </ViewComponents>
+  <layout:Grid containerType="grid">
+    <layout:Row/>
+  </layout:Grid>
+</Page>

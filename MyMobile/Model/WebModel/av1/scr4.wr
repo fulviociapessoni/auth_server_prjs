@@ -1,0 +1,14 @@
+<Screen xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="av1#scr4" name="Home" gr:x="465" gr:y="345" protected="true">
+  <ViewComponents>
+    <ViewComponent id="av1#scr4#gctu2" name="Logout" gr:x="10" gr:y="17">
+      <Events>
+        <OnSelectEvent id="av1#scr4#gctu2#oslte9" name="Logout">
+          <NavigationFlow id="av1#scr4#gctu2#oslte9#nf22" to="av1#act6" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </ViewComponent>
+  </ViewComponents>
+  <layout:Grid containerType="grid">
+    <layout:Row/>
+  </layout:Grid>
+</Screen>

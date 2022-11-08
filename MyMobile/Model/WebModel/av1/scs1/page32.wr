@@ -1,0 +1,17 @@
+<Screen xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="av1#scs1#page32" name="Application Details" gr:x="745" gr:y="990">
+  <ViewComponents>
+    <Details id="av1#scs1#page32#dtl8" gr:x="0" gr:y="0">
+      <DataBinding authServiceRes="_application_"/>
+      <DisplayAttributes authServiceOutput="_application_$appID"/>
+      <DisplayAttributes authServiceOutput="_application_$name"/>
+      <DisplayAttributes authServiceOutput="_application_$type"/>
+      <DisplayAttributes authServiceOutput="_application_$description"/>
+      <DisplayAttributes authServiceOutput="_application_$authorities"/>
+      <DisplayAttributes authServiceOutput="_application_$accessTokenValidity"/>
+      <DisplayAttributes authServiceOutput="_application_$refreshTokenValidity"/>
+    </Details>
+  </ViewComponents>
+  <layout:Grid containerType="grid">
+    <layout:Row/>
+  </layout:Grid>
+</Screen>

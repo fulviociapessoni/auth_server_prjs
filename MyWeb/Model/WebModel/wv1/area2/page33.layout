@@ -1,0 +1,78 @@
+<wr-page>
+  <wr-content for="breadcrumb">
+    <div>
+      <wd-select style="display: inline-block;" context="main/frm19/sfld5"></wd-select>
+      <wd-select style="display: inline-block;" context="main/frm19/sfld6"></wd-select>
+      <wd-button context="main/frm19/oslte46"></wd-button>
+      <wd-button context="main/frm19/clear"></wd-button>
+    </div>
+  </wr-content>
+  <wr-content for="page-content">
+    <wd-data-grid cols="main/lst14/data/{Attribute}*" [rows]="valueOf('main/lst14/data')" events="main/lst14/data/{Event}*">
+      <wr-content for="header[_application__permission_$oid]">
+        <wd-button variant="mat-icon-button" iconText="arrow_downward"></wd-button>
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_application__permission_$oid]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_application__permission_$userId]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_application__permission_$userId]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_application__permission_$applicationId]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_application__permission_$applicationId]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_application__permission_$permission]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_application__permission_$permission]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_application__permission_$status]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_application__permission_$status]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="header[_application__permission_$expirationDate]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_application__permission_$expirationDate]">
+        {{ valueOf(&#039;.&#039;, row) | date:&#039;wr-timestamp&#039; }}
+      </wr-content>
+      <wr-content for="header[_application__permission_$updatedAt]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_application__permission_$updatedAt]">
+        {{ valueOf(&#039;.&#039;, row) | date:&#039;wr-timestamp&#039; }}
+      </wr-content>
+      <wr-content for="event[oslte49]">
+        <wd-button variant="mat-button" color="primary"></wd-button>
+      </wr-content>
+      <wr-content for="event[oslte50]">
+        <wd-button variant="mat-button" color="primary"></wd-button>
+      </wr-content>
+    </wd-data-grid>
+    <br>
+    <br>
+    <br>
+    <div style="border: blue 2px solid">
+      <wd-select style="display: inline-block;" context="main/frm20/sfld7"></wd-select>
+      <wd-select style="display: inline-block;" context="main/frm20/sfld8"></wd-select>
+      <wd-input style="display: inline-block;" context="main/frm20/fld71"></wd-input>
+      <wd-select style="display: inline-block;" context="main/frm20/sfld9"></wd-select>
+      <wd-datepicker style="display: inline-block;" context="main/frm20/fld73"></wd-datepicker>
+      <wd-datepicker style="display: inline-block;" context="main/frm20/fld74"></wd-datepicker>
+      <br>
+      <wd-button context="main/frm20/oslte48"></wd-button>
+      <wd-button context="main/frm20/oslte51"></wd-button>
+      <wd-button context="main/frm20/clear"></wd-button>
+    </div>
+  </wr-content>
+</wr-page>

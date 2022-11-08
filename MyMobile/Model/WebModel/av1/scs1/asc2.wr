@@ -1,0 +1,11 @@
+<AbstractScreen xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="av1#scs1#asc2" name="Abstract Screen 2" gr:x="50" gr:y="315">
+  <ViewComponents>
+    <ViewComponent gr:x="0" gr:y="0" id="av1#scs1#asc2#gctu4" name="ViewComponent 4">
+      <Events>
+        <OnSelectEvent id="av1#scs1#asc2#gctu4#oslte15" name="Admin Screen">
+          <NavigationFlow id="av1#scs1#asc2#gctu4#oslte15#nf28" to="av1#scs1#page29" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </ViewComponent>
+  </ViewComponents>
+</AbstractScreen>

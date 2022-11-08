@@ -1,0 +1,26 @@
+<Screen xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="0" id="av1#scs1#page29" name="Admin">
+  <ViewComponents>
+    <ViewComponent id="av1#scs1#page29#gctu3" name="ViewComp" gr:x="16" gr:y="5">
+      <Events>
+        <OnSelectEvent id="av1#scs1#page29#gctu3#oslte10" name="Logout">
+          <NavigationFlow id="av1#scs1#page29#gctu3#oslte10#nf23" to="av1#act6" automaticCoupling="true"/>
+        </OnSelectEvent>
+        <OnSelectEvent id="av1#scs1#page29#gctu3#oslte11" name="Identity">
+          <NavigationFlow id="av1#scs1#page29#gctu3#oslte11#nf24" to="av1#scs1#page25#frm16" automaticCoupling="true"/>
+        </OnSelectEvent>
+        <OnSelectEvent id="av1#scs1#page29#gctu3#oslte12" name="Application">
+          <NavigationFlow id="av1#scs1#page29#gctu3#oslte12#nf25" to="av1#scs1#page31#frm18" automaticCoupling="true"/>
+        </OnSelectEvent>
+        <OnSelectEvent id="av1#scs1#page29#gctu3#oslte13" name="Permission">
+          <NavigationFlow id="av1#scs1#page29#gctu3#oslte13#nf26" to="av1#scs1#page33#frm19" automaticCoupling="true"/>
+        </OnSelectEvent>
+        <OnSelectEvent id="av1#scs1#page29#gctu3#oslte14" name="Claim">
+          <NavigationFlow id="av1#scs1#page29#gctu3#oslte14#nf27" to="av1#scs1#page36#frm21" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </ViewComponent>
+  </ViewComponents>
+  <layout:Grid containerType="grid">
+    <layout:Row/>
+  </layout:Grid>
+</Screen>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.webratio.ide.deploy.core.WebLocalLaunchConfigurationType">
+    <stringAttribute key="authenticationBaseUrl" value="http://localhost:7180/MyAuth"/>
+    <mapAttribute key="dependencies.dependency0">
+        <mapEntry key="BACK_END_BASE_URL" value="http://localhost:6080/MyDS"/>
+        <mapEntry key="name" value="MyDS"/>
+    </mapAttribute>
+    <stringAttribute key="main.appId" value="MyWeb"/>
+    <stringAttribute key="main.appName" value="MyWeb"/>
+    <stringAttribute key="main.appSecret" value="TXlXZWI="/>
+    <stringAttribute key="main.appVersion" value="0.0.1"/>
+    <stringAttribute key="main.buildMode" value="debug"/>
+    <stringAttribute key="model.general.outputPath" value="${webclientapps_loc}/${project_name}"/>
+    <mapAttribute key="tasks.task0">
+        <mapEntry key="type" value="Clear Deployment Folder"/>
+    </mapAttribute>
+    <mapAttribute key="tasks.task1">
+        <mapEntry key="stopOnErrors" value="false"/>
+        <mapEntry key="type" value="Generate Web Application"/>
+    </mapAttribute>
+    <mapAttribute key="tasks.task2">
+        <mapEntry key="deleteDeploymentFolder" value="true"/>
+        <mapEntry key="fileName" value="${project_name}.war"/>
+        <mapEntry key="type" value="WAR"/>
+    </mapAttribute>
+</launchConfiguration>

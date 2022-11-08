@@ -1,0 +1,20 @@
+<Screen xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="725" gr:y="425" id="av1#scs1#page26" name="Identity Details">
+  <ViewComponents>
+    <Details gr:x="0" gr:y="0" id="av1#scs1#page26#dtl7">
+      <DataBinding authServiceRes="_identity_"/>
+      <DisplayAttributes authServiceOutput="_identity_$userID"/>
+      <DisplayAttributes authServiceOutput="_identity_$firstName"/>
+      <DisplayAttributes authServiceOutput="_identity_$lastName"/>
+      <DisplayAttributes authServiceOutput="_identity_$email"/>
+      <DisplayAttributes authServiceOutput="_identity_$passwordExpirationDate"/>
+      <DisplayAttributes authServiceOutput="_identity_$authAdmin"/>
+      <DisplayAttributes authServiceOutput="_identity_$disabled"/>
+      <DisplayAttributes authServiceOutput="_identity_$expired"/>
+      <DisplayAttributes authServiceOutput="_identity_$locked"/>
+      <DisplayAttributes authServiceOutput="_identity_$attemptsNumber"/>
+    </Details>
+  </ViewComponents>
+  <layout:Grid containerType="grid">
+    <layout:Row/>
+  </layout:Grid>
+</Screen>

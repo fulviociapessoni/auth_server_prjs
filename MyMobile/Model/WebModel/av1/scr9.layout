@@ -1,0 +1,28 @@
+<wr-page>
+  <wr-content for="content">
+    <imd-data-table cols="main/lst3/data/{Attribute}*" [rows]="valueOf('main/lst3/data')">
+      <wr-content for="paginator">
+        <imd-paginator></imd-paginator>
+      </wr-content>
+      <wr-content for="header[_be_att5]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+        <imd-button appearance="clear" event="sortBy" iconPosition="icon-only" icon="chevron-down" size="small"></imd-button>
+      </wr-content>
+      <wr-content for="header[_be_att6]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="header[_be_att7]">
+        {{ labelOf(&#039;.&#039;) | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att5]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="data[_be_att6]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+      <wr-content for="data[_be_att7]">
+        {{ valueOf(&#039;.&#039;, row) }}
+      </wr-content>
+    </imd-data-table>
+  </wr-content>
+</wr-page>
